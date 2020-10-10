@@ -1,6 +1,6 @@
 <template>
-  <div class="footer">
-    <p>footer</p>
+  <div class="QuestList">
+    
   </div>
 </template>
 
@@ -9,3 +9,7 @@ export default {
 
 }
 </script>
+
+<style>
+
+</style>
