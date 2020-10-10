@@ -7,7 +7,7 @@
         </router-link>
       </li>
       <li>
-        <router-link to="/profile">
+        <router-link to="/cabinet">
           Profile
         </router-link>
       </li>
