@@ -10,13 +10,13 @@ const routes = [
     component: Home
   },
   {
-    path: '/login',
-    name: 'Login',
+    path: "/login",
+    name: "Login",
     component: Login
   },
   {
-    path: '/cabinet',
-    name: 'Cabinet',
+    path: "/cabinet",
+    name: "Cabinet",
     component: Cabinet
   },
 ];

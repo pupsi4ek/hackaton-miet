@@ -1,19 +1,41 @@
 {
-  "posts": [
+  "quests": [
+    {
+      "id": 0,
+      "title": "Гид по Москве",
+      "questImage": "MSK.gif",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat debitis veritatis nihil ex repellendus eum saepe, provident aspernatur et sint dolorem labore sit laudantium tenetur quia veniam laborum quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat debitis veritatis nihil ex repellendus eum saepe, provident aspernatur et sint dolorem labore sit laudantium tenetur quia veniam laborum quas.",
+      "author": "Vasiliy Petrov",
+      "published": "2020-10-10T12:30:00.511Z",
+      "type": "public"
+    },
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "title": "Курс по новому офису",
+      "questImage": "MSK.gif",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat debitis veritatis nihil ex repellendus eum saepe, provident aspernatur et sint dolorem labore sit laudantium tenetur quia veniam laborum quas. Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      "author": "KirillShapkin",
+      "published": "2020-10-10T13:30:00.511Z",
+      "type": "private"
     }
   ],
-  "comments": [
+  "users": [
+    {
+      "id": 0,
+      "username": "Vasiliy Petrov",
+      "email": "vp@yandex.ru",
+      "quests": [
+        0,
+        1
+      ]
+    },
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "username": "KirillShapkin",
+      "email": "KirShap@yandex.ru",
+      "quests": [
+        0
+      ]
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

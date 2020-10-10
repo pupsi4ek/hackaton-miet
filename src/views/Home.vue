@@ -1,14 +1,16 @@
 <template>
   <div class="home">
-    <h1>Home</h1>
+    <QuestsList />
   </div>
 </template>
 
 <script>
+import QuestsList from "@/components/questsList"
 
 export default {
   name: "Home",
   components: {
+    QuestsList
   }
 };
 </script>
