@@ -11,8 +11,17 @@
     },
     {
       "id": 1,
-      "title": "Курс по новому офису",
+      "title": "Экскурсия по Кремлю",
       "questImage": "MSK.gif",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat debitis veritatis nihil ex repellendus eum saepe, provident aspernatur et sint dolorem labore sit laudantium tenetur quia veniam laborum quas. Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      "author": "KirillShapkin",
+      "published": "2020-10-10T13:30:00.511Z",
+      "type": "public"
+    },
+    {
+      "id": 2,
+      "title": "Квест для школьников",
+      "questImage": "quests.jpg",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat debitis veritatis nihil ex repellendus eum saepe, provident aspernatur et sint dolorem labore sit laudantium tenetur quia veniam laborum quas. Lorem ipsum dolor sit amet consectetur adipisicing elit",
       "author": "KirillShapkin",
       "published": "2020-10-10T13:30:00.511Z",
@@ -34,7 +43,8 @@
       "username": "KirillShapkin",
       "email": "KirShap@yandex.ru",
       "quests": [
-        0
+        0,
+        2
       ]
     }
   ]

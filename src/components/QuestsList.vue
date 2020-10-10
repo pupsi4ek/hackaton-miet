@@ -1,6 +1,5 @@
 <template>
-  <div class="QuestList">
-    <h1>Quest List</h1>
+  <div class="QuestList container mx-auto flex flex-wrap">
     <div
       class="p-4 md:w-1/2 xl:w-1/3 xxl:w-1/3 "
       v-for="quest in quests"
@@ -31,8 +30,17 @@ export default {
     },
     {
       "id": 1,
-      "title": "Курс по новому офису",
+      "title": "Экскурсия по Кремлю",
       "questImage": "MSK.gif",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat debitis veritatis nihil ex repellendus eum saepe, provident aspernatur et sint dolorem labore sit laudantium tenetur quia veniam laborum quas. Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      "author": "KirillShapkin",
+      "published": "2020-10-10T13:30:00.511Z",
+      "type": "public"
+    },
+    {
+      "id": 2,
+      "title": "Квест для школьников",
+      "questImage": "quests.jpg",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat debitis veritatis nihil ex repellendus eum saepe, provident aspernatur et sint dolorem labore sit laudantium tenetur quia veniam laborum quas. Lorem ipsum dolor sit amet consectetur adipisicing elit",
       "author": "KirillShapkin",
       "published": "2020-10-10T13:30:00.511Z",
