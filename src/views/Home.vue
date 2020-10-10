@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import QuestsList from "@/components/questsList"
+import QuestsList from "@/components/QuestsList"
 
 export default {
   name: "Home",

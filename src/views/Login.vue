@@ -1,15 +1,16 @@
 <template>
   <div class="login">
-    <h1>Login</h1>
+    <singIn />
   </div>
 </template>
 
 <script>
+import singIn from '../components/singIn'
+
 export default {
+  components: {
+    singIn
+  }
 
 }
 </script>
-
-<style>
-
-</style>
