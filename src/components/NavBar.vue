@@ -1,27 +1,42 @@
 <template>
-    <div>
-         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
-  <div class="w-screen flex flex-row items-center p-1 justify-between bg-white shadow-xs">
-    <div class="ml-8 text-lg text-gray-700 hidden md:flex">My Website</div>
-    <span class="w-screen md:w-1/3 h-10 bg-gray-200 cursor-pointer border border-gray-300 text-sm rounded-full flex">
-      <input type="search" name="serch" placeholder="Search"
-        class="flex-grow px-4 rounded-l-full rounded-r-full text-sm focus:outline-none">
-      <i class="fas fa-search m-3 mr-5 text-lg text-gray-700 w-4 h-4">
-      </i>
-    </span>
-    <div class="flex flex-row-reverse mr-4 ml-4 md:hidden">
-      <i class="fas fa-bars"></i>
-    </div >
-      <div class="flex flex-row-reverse mr-8 hidden md:flex">
-        <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">Button</div>
-        <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">Link</div>
+<nav class="bg-white shadow">
+  <div class="container mx-auto px-6 py-3 md:flex md:justify-between md:items-center">
+    <div class="flex justify-between items-center">
+      <div>
+        <a class="text-gray-800 text-xl font-bold md:text-2xl hover:text-gray-700" href="#">Geo</a>
       </div>
-  </div>
+
+      <!-- Mobile menu button -->
+      <div class="flex md:hidden" @click="opened=!opened">
+        <button type="button" class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="toggle menu">
+          <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+            <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+          </svg>
+        </button>
+      </div>
     </div>
+
+    <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+    <div class="md:flex items-center " :class="{'block':opened, 'hidden':!opened}">
+      <div class="flex flex-col md:flex-row md:mx-6">
+        <a class="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="#">Home</a>
+        <a class="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="#">Shop</a>
+        <a class="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="#">Contact</a>
+        <a class="my-1 text-sm text-gray-700 font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="#">About</a>
+      </div>
+    </div>
+  </div>
+</nav>
 </template>
 
 <script>
 export default {
+    data ()
+    {
+        return {
+            opened : false
+        }
+    }
 
 }
 </script>
