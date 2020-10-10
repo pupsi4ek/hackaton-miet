@@ -1,6 +1,5 @@
 <template>
   <div class="questCard">
-    <h1>card</h1>
     <div
       class="h-full hover:shadow-md border-gray-200  overflow-hidden transition duration-500 ease-in-out"
     >
